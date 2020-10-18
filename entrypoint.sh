@@ -1,3 +1,5 @@
+#!/bin/sh
+set -e
 deluser dcc
 
 addgroup -S dcc -g $GID dcc
