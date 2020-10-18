@@ -2,7 +2,7 @@
 set -e
 deluser dcc
 
-addgroup -S dcc -g $GID dcc
+addgroup -S -g $GID dcc
 adduser -S -u $UID -h /var/dcc -D -H -s /sbin/nologin --gecos "DCC antispam" -G dcc dcc
 
 chown -R dcc:dcc /socket /data
